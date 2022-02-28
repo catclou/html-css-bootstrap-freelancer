@@ -10,40 +10,40 @@
     <title>Start Bootstrap</title>
 </head>
 <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg_nav_footer">
-        <div class="container-fluid">
-            <a class="navbar-brand text-uppercase fw-bold" href="#">start bootstrap</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link text-uppercase fw-bold active" href="#portfolio">portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-uppercase fw-bold" href="#about">about</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-uppercase fw-bold" href="#contact">contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
-    <!-- header and hero -->
+    <!-- header with navbar and hero -->
     <header class="bg_green text-white text-center">
-        <div class="px-4 py-5 my-5 text-center">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg_nav_footer">
+            <div class="container-fluid">
+                <a class="navbar-brand text-uppercase fw-bold" href="#">start bootstrap</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase fw-bold active" href="#portfolio">portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase fw-bold" href="#about">about</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase fw-bold" href="#contact">contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="px-4 py-5 my-2 text-center">
             <img class="d-block mx-auto mb-4" src="./assets/img/avatar.svg" alt="avatar" width="400" height="300">
             <h1 class="display-5 fw-bold text-uppercase">start bootstrap</h1>
         </div>
     </header>
 
     <!-- portfolio -->
-    <section id="portfolio" class="text-center p-6">
+    <section id="portfolio" class="text-center pt-5">
         <h2 class="display-4 fw-bold text-uppercase">portfolio</h2>
         <div class="container justify-content-center">
             <div class="row justify-content-center mt-5 mb-5">
@@ -62,7 +62,7 @@
                 <div class="col-12 col-md-6 col-lg-4 mb-5">
                     <img class="w-100 h-100 rounded_edges" src="./assets/img/safe.png" alt="safe">
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-4 mb-5">
                     <img class="w-100 h-100 rounded_edges" src="./assets/img/submarine.png" alt="submarine">
                 </div>
             </div>
@@ -76,9 +76,9 @@
         <h2 class="display-4 fw-bold text-uppercase">about</h2>
         <div class="container mt-5">
             <div class="row justify-content-center">
-                <div class="col-lg-4">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files
+                <div class="col-lg-4 fw-bold mb-3 text-start">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files
                 including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</div>
-                <div class="col-lg-4">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to
+                <div class="col-lg-4 fw-bold text-start">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to
                 the contact form to make it fully functional!</div>
             </div>
             <button type="button" class="btn btn-outline-light mt-5 p-3">Download</button>
@@ -86,7 +86,7 @@
     </section>
 
     <!-- contact -->
-    <section id="contact" class="p-3">
+    <section id="contact" class="p-3 mt-4">
         <h2 class="display-4 fw-bold text-uppercase text-center">contact me</h2>
         <div class="container-fluid mt-5">
             <form>
@@ -129,22 +129,23 @@
     <footer class="bg_info text-white text-center">
         <div class="container-fluid">
             <div class="row justify-content-center px-3 py-5 my-0 text-center">
-                <div class="col-lg-4">
+                <div class="col-12 col-md-4 col-lg-4 mb-3">
                     <h4 class="text-uppercase">location</h4>
                     <span>2215 John Daniel Drive Clark, MO</span>
                     <span>54243</span>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-12 col-md-4 col-lg-4 mb-3">
                     <h4 class="text-uppercase">around the web</h4>
+                    <span></span>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-12 col-md-4 col-lg-4">
                     <h4 class="text-uppercase">about freelancer</h4>
-                    <span>Freelance is a free to use, open source Bootstrap theme created by <a class="text-white" href="">Start Bootstrap</a></span>
+                    <span>Freelance is a free to use, open source Bootstrap theme created by <a class="text_green text-decoration-none" href="">Start Bootstrap</a>.</span>
                 </div>
             </div>
         </div>
         <div class="bg_nav_footer text-white text-center p-4">
-            <span>Copyright Your Website 2019</span>
+            <span>Copyright &copy; Your Website 2019</span>
         </div>
     </footer>
 
